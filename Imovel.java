@@ -5,11 +5,13 @@ public class Imovel {
     private Integer quartos;
     private Integer precosPorDiaria;
     private Date datasDisponiveis;
+    private Boolean ehPraia;
 
     public Imovel(String endereco, Integer quartos, Integer precosPorDiaria) {
         this.endereco = endereco;
         this.quartos = quartos;
         this.precosPorDiaria = precosPorDiaria;
+        this.ehPraia = ehPraia;
     }
 
     public String getEndereco() {
@@ -34,6 +36,10 @@ public class Imovel {
 
     public void setPrecosPorDiaria(Integer precosPorDiaria) {
         this.precosPorDiaria = precosPorDiaria;
+    }
+
+    public boolean getEhPraia() {
+        return getEhpraia;
     }
 
 }
